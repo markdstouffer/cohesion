@@ -1,10 +1,15 @@
-import { SafeAreaView, StyleSheet, Text, View } from 'react-native';
+import {Pressable, SafeAreaView, StyleSheet, Text, View} from 'react-native';
+import {Link} from "expo-router";
 
 const HomeScreen = () => {
   return (
     <SafeAreaView style={styles.safeArea}>
       <View style={styles.container}>
-        <Text style={styles.text}>COHESION</Text>
+        <Link href="/tabs" asChild>
+          <Pressable>
+            <Text style={styles.text}>COHESION</Text>
+          </Pressable>
+        </Link>
       </View>
     </SafeAreaView>
   );
