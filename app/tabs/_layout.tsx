@@ -20,7 +20,7 @@ const TabLayout = () => {
                 options={{
                     title: 'Groups',
                     tabBarIcon: ({ color, focused }) => (
-                        <TabBarIcon name={focused ? 'home' : 'home-outline'} color={color} />
+                        <TabBarIcon name={focused ? 'people' : 'people-outline'} color={color} />
                     ),
                 }}
             />
@@ -29,7 +29,7 @@ const TabLayout = () => {
                 options={{
                     title: 'Profile',
                     tabBarIcon: ({ color, focused }) => (
-                        <TabBarIcon name={focused ? 'home' : 'home-outline'} color={color} />
+                        <TabBarIcon name={focused ? 'person' : 'person-outline'} color={color} />
                     )
                 }}
             />
